@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp7.MainPage">
 
-    <ScrollView>
         <Grid
-     Padding="5"
-     RowSpacing="5"
-     ColumnSpacing="5"
-     RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+            Padding="5"
+            RowSpacing="5"
+            ColumnSpacing="5"
+            RowDefinitions="Auto,Auto,Auto,Auto,Auto">  
 
             <Entry x:Name="newStudent" Placeholder="Enter name" Grid.Row="0"/>
             <Button Text="Add Student" Clicked="OnNewButtonClicked" Grid.Row="1"/>
@@ -24,8 +23,7 @@
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
-    </ScrollView>
-   
+            </CollectionView>       
+    </Grid>
+
 </ContentPage>
